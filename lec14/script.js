@@ -1,0 +1,10 @@
+const vm = new Vue({
+  el: '#app',
+  data() {
+    return {
+      message: 'Hello'
+    }
+  }
+})
+
+window.vm = vm

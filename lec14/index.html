@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/vue@2.5.21"></script>
+
+<div id="app">
+  <div v-if="message">
+    {{ message }}
+  </div>
+  <div v-else-if="message === ''">
+    メッセージが空です
+  </div>
+  <div v-else>  
+    メッセージがありません
+  </div>
+</div>

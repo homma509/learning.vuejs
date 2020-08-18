@@ -11,6 +11,7 @@
       <v-spacer></v-spacer>
 
     </v-app-bar>
+    <SideNav/>
 
     <v-main>
     </v-main>
@@ -18,8 +19,12 @@
 </template>
 
 <script>
+import SideNav from './components/SideNav'
 export default {
   name: 'App',
+  components: {
+    SideNav
+  },
   data: () => ({
     //
   }),

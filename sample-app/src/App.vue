@@ -6,7 +6,7 @@
       dark
     >
 
-      <v-app-bar-nav-icon @click="openSideMenu"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="toggleSideMenu"></v-app-bar-nav-icon>
       <v-tool-title>マイアドレス帳</v-tool-title>
       <v-spacer></v-spacer>
 
@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import SideNav from './components/SideNav'
 export default {
   name: 'App',
@@ -29,9 +30,7 @@ export default {
     //
   }),
   methods: {
-    openSideMenu() {
-      this.$store.dispatch('toggleSideMenu')
-    }
+    ...mapActions(['toggleSideMenu'])
   }
 };
 </script>

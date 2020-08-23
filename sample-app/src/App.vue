@@ -13,8 +13,11 @@
     </v-app-bar>
     <SideNav/>
 
-    <v-main>
-    </v-main>
+    <v-content>
+      <v-container fluid fill-height align-start>
+        <router-view/>
+      </v-container>
+    </v-content>
   </v-app>
 </template>
 
